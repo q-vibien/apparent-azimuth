@@ -3,122 +3,125 @@ import HeaderLink from "./HeaderLink.astro";
 import { SITE_TITLE } from "../consts";
 ---
 
-<header>
-  <nav class="relative px-4 py-4 flex justify-between items-center bg-white">
-    <div class="lg:hidden flex justify-end">
-      <button class="navbar-burger flex items-center text-aqua p-3 lg:hidden">
-        <svg
-          class="block h-6 w-6 fill-current"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <title>Mobile menu</title>
-          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-        </svg>
-      </button>
-    </div>
-
-    <div class="hidden lg:flex justify-center w-full space-x-4">
-      <HeaderLink href="/">Accueil</HeaderLink>
-      <HeaderLink href="/blog">Création</HeaderLink>
-      <HeaderLink href="/about">Contact</HeaderLink>
-    </div>
-  </nav>
-  <div class="navbar-menu relative z-50 hidden lg:hidden">
-    <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
-    <nav
-      class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto"
-    >
-      <div class="flex items-center mb-8">
-        
-        <button class="navbar-close">
+<main class="content">
+  <header class="fixed top-0 left-0 right-0 z-50">
+    <nav class="relative px-4 py-4 flex justify-between items-center bg-white">
+      <div class="lg:hidden flex justify-end">
+        <button class="navbar-burger flex items-center text-aqua p-3 lg:hidden">
           <svg
-            class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
+            class="block h-6 w-6 fill-current"
+            viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
           >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M6 18L18 6M6 6l12 12"></path>
+            <title>Mobile menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
           </svg>
         </button>
       </div>
-      <div>
-        <ul>
-          <li class="mb-1">
-            <HeaderLink href="/">Accueil</HeaderLink>
-          </li>
-          <li class="mb-1">
-            <HeaderLink href="/blog">Création</HeaderLink>
-          </li>
-          <li class="mb-1">
-            <HeaderLink href="/about">Contact</HeaderLink>
-          </li>
-        </ul>
-      </div>
-      <div class="mt-auto">
-        <div class="pt-6">
-         
-      
+
+      <div class="hidden lg:flex justify-center w-full space-x-4">
+        <HeaderLink href="/">Accueil</HeaderLink>
+        <HeaderLink href="/blog">Création</HeaderLink>
+        <HeaderLink href="/about">Contact</HeaderLink>
       </div>
     </nav>
-  </div>
-</header>
+    <div class="navbar-menu relative z-50 hidden lg:hidden">
+      <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+      <nav
+        class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto"
+      >
+        <div class="flex items-center mb-8">
+          <button class="navbar-close">
+            <svg
+              class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+        <div>
+          <ul>
+            <li class="mb-1">
+              <HeaderLink href="/">Accueil</HeaderLink>
+            </li>
+            <li class="mb-1">
+              <HeaderLink href="/blog">Création</HeaderLink>
+            </li>
+            <li class="mb-1">
+              <HeaderLink href="/about">Contact</HeaderLink>
+            </li>
+          </ul>
+        </div>
+        <div class="mt-auto">
+          <div class="pt-6"></div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+</main>
 
 <script>
-	// Menus burger
-	document.addEventListener("DOMContentLoaded", function () {
-	  // ouvrir
-	  const burger = document.querySelectorAll(".navbar-burger");
-	  const menu = document.querySelectorAll(".navbar-menu");
-  
-	  if (burger.length && menu.length) {
-		for (var i = 0; i < burger.length; i++) {
-		  burger[i].addEventListener("click", function () {
-			for (var j = 0; j < menu.length; j++) {
-			  menu[j].classList.toggle("hidden");
-			}
-		  });
-		}
-	  }
-  
-	  // fermer
-	  const close = document.querySelectorAll(".navbar-close");
-	  const backdrop = document.querySelectorAll(".navbar-backdrop");
-  
-	  if (close.length) {
-		for (var i = 0; i < close.length; i++) {
-		  close[i].addEventListener("click", function () {
-			for (var j = 0; j < menu.length; j++) {
-			  menu[j].classList.toggle("hidden");
-			}
-		  });
-		}
-	  }
-  
-	  if (backdrop.length) {
-		for (var i = 0; i < backdrop.length; i++) {
-		  backdrop[i].addEventListener("click", function () {
-			for (var j = 0; j < menu.length; j++) {
-			  menu[j].classList.toggle("hidden");
-			}
-		  });
-		}
-	  }
-	});
-  </script>
+  // Menus burger
+  document.addEventListener("DOMContentLoaded", function () {
+    // ouvrir
+    const burger = document.querySelectorAll(".navbar-burger");
+    const menu = document.querySelectorAll(".navbar-menu");
 
+    if (burger.length && menu.length) {
+      for (var i = 0; i < burger.length; i++) {
+        burger[i].addEventListener("click", function () {
+          for (var j = 0; j < menu.length; j++) {
+            menu[j].classList.toggle("hidden");
+          }
+        });
+      }
+    }
+
+    // fermer
+    const close = document.querySelectorAll(".navbar-close");
+    const backdrop = document.querySelectorAll(".navbar-backdrop");
+
+    if (close.length) {
+      for (var i = 0; i < close.length; i++) {
+        close[i].addEventListener("click", function () {
+          for (var j = 0; j < menu.length; j++) {
+            menu[j].classList.toggle("hidden");
+          }
+        });
+      }
+    }
+
+    if (backdrop.length) {
+      for (var i = 0; i < backdrop.length; i++) {
+        backdrop[i].addEventListener("click", function () {
+          for (var j = 0; j < menu.length; j++) {
+            menu[j].classList.toggle("hidden");
+          }
+        });
+      }
+    }
+  });
+</script>
 
 <style>
   header {
     margin: 0;
-    padding: 0 1em;
     box-shadow: 0 2px 8px rgba(var(--black), 5%);
     background-color: #1c2541;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
   }
   h2 {
     margin: 0;
@@ -134,9 +137,10 @@ import { SITE_TITLE } from "../consts";
     align-items: center;
     justify-content: space-between;
     background-color: #1c2541;
+    min-height: 50px;
   }
   nav a {
-    padding: 1em 0.5em;
+    padding: 0.5em 0.5em;
     color: white;
     border-bottom: 4px solid transparent;
     text-decoration: none;
@@ -144,6 +148,9 @@ import { SITE_TITLE } from "../consts";
   nav a.active {
     text-decoration: none;
     border-bottom-color: white;
+  }
+  .content {
+    padding-top: 60px; /* Ajoute un padding-top pour éviter que le contenu soit caché sous le header */
   }
   .social-links,
   .social-links a {
