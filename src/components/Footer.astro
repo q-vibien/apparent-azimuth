@@ -12,9 +12,14 @@ const today = new Date();
   }
 
   document.addEventListener('DOMContentLoaded', (event) => {
-    document.getElementById('email').addEventListener('click', copyEmail);
+    const emailElement = document.getElementById('email');
+    if (emailElement) {
+      emailElement.addEventListener('click', copyEmail);
+    }
+   
   });
 </script>
+
 <footer>
   <section class="text-sm">
     <div class="flex flex-col justify-center items-center">
@@ -29,7 +34,7 @@ const today = new Date();
       </div>
     </div>
     <p class="text-aqua" id="email">quentinvibien@gmail.com</p>
-    &copy; {today.getFullYear()} Vibien Quentin. All rights reserved.
+    &copy; <span id="year"></span> Vibien Quentin. All rights reserved.
   </section>
 </footer>
 
