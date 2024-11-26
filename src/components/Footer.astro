@@ -1,12 +1,38 @@
 ---
 const today = new Date();
 ---
+<script>
+  function copyEmail() {
+    const email = 'quentinvibien@gmail.com';
+    navigator.clipboard.writeText(email).then(() => {
+      alert('Email copied to clipboard!');
+    }).catch(err => {
+      console.error('Failed to copy email: ', err);
+    });
+  }
 
+  document.addEventListener('DOMContentLoaded', (event) => {
+    document.getElementById('email').addEventListener('click', copyEmail);
+  });
+</script>
 <footer>
   <section class="text-sm">
+    <div class="flex flex-col justify-center items-center">
+      <h2 class="font-Aquire text-xl text-white">Contactez-moi !</h2>
+      <div class="flex flex-row gap-4 mb-4">
+        <a href="https://www.behance.net/quentpsyt">
+          <img class="w-10" src="/logo-behance.png" alt="logo behance" />
+        </a>
+        <a href="https://www.linkedin.com/in/quentin-vibien-5b630b259/">
+          <img class="w-10" src="/logo-linkedin.png" alt="logo linkedin" />
+        </a>
+      </div>
+    </div>
+    <p class="text-aqua" id="email">quentinvibien@gmail.com</p>
     &copy; {today.getFullYear()} Vibien Quentin. All rights reserved.
   </section>
 </footer>
+
 <style>
   footer {
     padding: 2em 1em 6em 1em;

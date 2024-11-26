@@ -33,66 +33,89 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
           download="CV.pdf">Télécharger CV</a
         >
       </div>
-      <section class="p-5 rounded-md border-grayish-blue border-2">
-        <section>
-          <h2 class="text-aqua text-2xl font-Aquire">Mes Compétences</h2>
+      <section
+        class="flex flex-col justify-center p-4 rounded-md border-grayish-blue border-2 lg:p-6"
+      >
+        <h2 class="text-aqua text-2xl font-Aquire">Mes Compétences</h2>
+
+        <section class="flex flex-col justify-center items-center">
           <p class="font-Merriweather text-white text-sm lg:text-base">
             Au cours de ma formation, j’ai acquis des compétences en graphisme,
             développement web, ainsi qu’en montage vidéo et audio. J’ai eu
             l’opportunité de les affiner et de les mettre en pratique à travers
             mes expériences professionnelles et mes projets personnels.
           </p>
-          <div class="mb-4 border-t-2 border-grayish-blue"></div>
-          <div>
-            <h2 class="mb-4 text-white text-xl font-Aquire">Graphisme</h2>
-            <ul class="flex justify-start items-center gap-4 mb-4 w-44 lg:w-64">
-              <li>
-                <img src="/logo-illustrator.png" alt="logo illustrator" />
-              </li>
-              <li><img src="/logo-photoshop.png" alt="logo photoshop" /></li>
-              <li><img src="/logo-after.png" alt="logo after effect" /></li>
-              <li><img src="/logo-indesign.png" alt="logo indesign" /></li>
-            </ul>
-            <p class="font-Merriweather text-white text-sm lg:text-base">
-              Je maîtrise les logiciels Adobe (Photoshop, Illustrator, InDesign
-              et After Effects), ce qui me permet de concevoir des visuels à la
-              fois originaux et bien structurés. Grâce à ces compétences, je les
-              applique au quotidien dans ma vie professionnelle, en réalisant
-              des supports variés tels que des cartes de visite, des flyers, des
-              publications et des stories Instagram, entre autres.
-            </p>
+          <div class="flex flex-col lg:flex-row lg:items-start lg:gap-4">
+            <div>
+              <h2 class="mb-4 text-white text-xl font-Aquire">Graphisme</h2>
+              <ul
+                class="flex justify-start items-center gap-4 mb-4 w-44 lg:w-64"
+              >
+                <li>
+                  <img src="/logo-illustrator.png" alt="logo illustrator" />
+                </li>
+                <li><img src="/logo-photoshop.png" alt="logo photoshop" /></li>
+                <li><img src="/logo-after.png" alt="logo after effect" /></li>
+                <li><img src="/logo-indesign.png" alt="logo indesign" /></li>
+              </ul>
+              <p class="font-Merriweather text-white text-sm lg:text-base">
+                Je maîtrise les logiciels Adobe (Photoshop, Illustrator,
+                InDesign et After Effects), ce qui me permet de concevoir des
+                visuels à la fois originaux et bien structurés. Grâce à ces
+                compétences, je les applique au quotidien dans ma vie
+                professionnelle, en réalisant des supports variés tels que des
+                cartes de visite, des flyers, des publications et des stories
+                Instagram, entre autres.
+              </p>
+            </div>
+            <img class="ml-2 w-64 mb-4 lg:mb-0 lg:ml-4 lg:mt-16" src="/graphisme.png" alt="Graphisme"/>
           </div>
 
           <div class="mb-4 border-t-2 border-grayish-blue"></div>
-          <div>
-            <h2 class="mb-4 text-white text-xl font-Aquire">
-              Développement web
-            </h2>
-            <ul class="flex justify-start items-center gap-4 mb-4 w-32 lg:w-40">
-              <li><img src="/html.png" alt="logo HTML" /></li>
-              <li><img src="/css.png" alt="logo CSS" /></li>
-            </ul>
-            <p class="font-Merriweather text-white text-sm lg:text-base">
-              J'ai acquis de solides compétences en HTML et CSS, que j'ai mises
-              en pratique en créant des sites internet fonctionnels et
-              esthétiques. Ces technologies m'ont permis de concevoir des
-              interfaces web responsives, optimisées pour différents appareils
-              et navigateurs.
-            </p>
+          <div class="flex flex-col lg:flex-row lg:items-start lg:gap-4">
+            <div>
+              <h2 class="mb-4 text-white text-xl font-Aquire">
+                Développement web
+              </h2>
+              <ul
+                class="flex justify-start items-center gap-4 mb-4 w-32 lg:w-40"
+              >
+                <li><img src="/html.png" alt="logo HTML" /></li>
+                <li><img src="/css.png" alt="logo CSS" /></li>
+              </ul>
+              <div class="flex flex-row">
+                <p class="font-Merriweather text-white text-sm lg:text-base">
+                  J'ai acquis de solides compétences en HTML et CSS, que j'ai
+                  mises en pratique en créant des sites internet fonctionnels et
+                  esthétiques. Ces technologies m'ont permis de concevoir des
+                  interfaces web responsives, optimisées pour différents
+                  appareils et navigateurs.
+                </p>
+              </div>
+            </div>
+            <img class="ml-2 w-64 mb-4 lg:mb-0 lg:ml-4 lg:mt-16" src="/Dev.png" alt="Developpement"/>
           </div>
 
           <div class="mb-4 border-t-2 border-grayish-blue"></div>
-          <div>
-            <h2 class="mb-4 text-white text-xl font-Aquire">
-              Montage vidéo
-            </h2>
-            <ul class="flex justify-start items-center gap-4 mb-4 w-20 lg:w-32">
-              <li><img src="/logo-premiere.png" alt="logo HTML" /></li>
-              <li><img src="/logo-filmora.png" alt="logo CSS" /></li>
-            </ul>
-            <p class="font-Merriweather text-white text-sm lg:text-base">
-             J'ai une bonne maîtrise des logiciels de montage vidéo, notamment Adobe Premiere Pro et Filmora. J'ai pu travailler sur des projets de montage, en utilisant ses outils avancés pour l'édition,  l'ajout d'effets visuels et l'intégration de transitions fluides. J'apprécie particulièrement leur flexibilité et les fonctionnalités professionnelles, ce qui me permet de créer des vidéos de haute qualité adaptées aux besoins spécifiques de chaque projet.
-            </p>
+          <div class="flex flex-col lg:flex-row lg:items-start lg:gap-4">
+            <div>
+              <h2 class="mb-4 text-white text-xl font-Aquire">Montage vidéo</h2>
+              <ul class="flex justify-start items-center gap-4 mb-4 w-20 lg:w-32">
+                <li><img src="/logo-premiere.png" alt="logo HTML" /></li>
+                <li><img src="/logo-filmora.png" alt="logo CSS" /></li>
+              </ul>
+              <p class="font-Merriweather text-white text-sm lg:text-base">
+                J'ai une bonne maîtrise des logiciels de montage vidéo, notamment
+                Adobe Premiere Pro et Filmora. J'ai pu travailler sur des projets
+                de montage, en utilisant ses outils avancés pour l'édition,
+                l'ajout d'effets visuels et l'intégration de transitions fluides.
+                J'apprécie particulièrement leur flexibilité et les
+                fonctionnalités professionnelles, ce qui me permet de créer des
+                vidéos de haute qualité adaptées aux besoins spécifiques de chaque
+                projet.
+              </p>
+            </div>
+            <img class="ml-2 w-64 mb-4 lg:mb-0 lg:ml-4 lg:mt-16" src="/graphisme.png" alt="Graphisme" />
           </div>
         </section>
       </section>
