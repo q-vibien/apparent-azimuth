@@ -25,10 +25,9 @@ export default {
         "grayish-blue": "#3A506B",
       },
 
-      cursor: {
-        default: "url(/.png)",
+      boxShadow: {
+        'bottom-left': '-10px 20px 25px  rgba(91, 192, 190, 0.7), -10px 10px 25px rgba(91, 192, 190, 0.7)',
       },
-
       plugins: [],
     },
   },
