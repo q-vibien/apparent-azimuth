@@ -31,7 +31,7 @@ heroImage: "/Coachella.webp"
   <div class="flex flex-col items-center mt-8 border-4 border-grayish-blue p-4 rounded">
     <h2 class="mb-4 font-Aquire text-white text-xl lg:text-2xl">Reel instagram</h2>
     <div class="w-full lg:w-[700px]">
-      <iframe class="rounded-lg w-full h-64 lg:h-[400px]" src="https://www.youtube.com/embed/oVxsbU4zW44" title="Coachella motion design" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       <iframe class="rounded-lg w-full h-64 lg:w-[700px] lg:h-[400px]" src="https://youtube.com/embed/CZU4HFLFvTA?feature=share" title="Coachella motion design" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   </div>
   <div class="flex flex-col justify-center mt-8 border-4 border-grayish-blue p-4 rounded">
