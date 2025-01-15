@@ -8,7 +8,7 @@ heroImage: "/Bar/Bar.webp"
    <section>
     <h2 class="mb-4 font-Aquire text-white text-xl lg:text-2xl"> Concept du bar </h2>
     <p class="text-base text-white"> Le projet, réalisé en binôme, consistait à concevoir l'identité complète ainsi que les supports de communication pour un bar fictif que nous avons  imaginé.<p>
-    <p class="text-base text-white"> Die Zeitkapsel est bar à thème inspiré du style vintage des années 50 à 70 et le voyage dans le temps. Le concept du bar est de faire découvrir  d’anciens alcools en racontant leur histoire pour fasciner les clients. Le bar propose beaucoup de saveurs avec ses cocktails, mocktails... pour qu’il y en ait pour tous les goûts. Basé  à Berlin dans le quartier historique, cela nous permet de nous ancrer vraiment dans notre univers. </p>
+    <p class="text-base text-white"> Die Zeitkapsel est un bar à thème inspiré du style vintage des années 50 à 70 et le voyage dans le temps. Le concept du bar est de faire découvrir  d’anciens alcools en racontant leur histoire pour fasciner les clients. Le bar propose beaucoup de saveurs avec ses cocktails, mocktails... pour qu’il y en ait pour tous les goûts. Basé  à Berlin dans le quartier historique, cela nous permet de nous ancrer vraiment dans notre univers. </p>
    </section>
        <div class="mb-4 border-t-2 border-grayish-blue"></div>
 
