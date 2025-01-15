@@ -21,7 +21,7 @@ export default {
       colors: {
         background: "#0B132B",
         aqua: "#5BC0BE",
-        "dark-blue": "1C2541",
+        "dark-blue": "#1C2541",
         "grayish-blue": "#3A506B",
       },
 
