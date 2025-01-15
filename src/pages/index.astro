@@ -10,10 +10,36 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
-  <body class="bg-background">
+  <body class="bg-background relative">
     <Header />
-    <main class="bg-background">
-      <section class="flex justify-center gap-8  mb-4 lg:h-screen lg:mt-40">
+    <main class="bg-background relative">
+      <!-- Les étoiles -->
+      <div class="star" style="top: 5%; left: 15%; animation-delay: 0s;"></div>
+      <div class="star" style="top: 5%; left: 80%; animation-delay: 0.5s;"></div>
+      <div class="star" style="top: 12%; left: -5%; animation-delay: 1s;"></div>
+      <div class="star" style="top: 18%; left: 75%; animation-delay: 1.5s;"></div>
+      <div class="star" style="top: 25%; left: 35%; animation-delay: 2s;"></div>
+      <div class="star" style="top: 32%; left: 85%; animation-delay: 2.5s;"></div>
+      <div class="star" style="top: 38%; left: 25%; animation-delay: 3s;"></div>
+      <div class="star" style="top: 45%; left: 55%; animation-delay: 3.5s;"></div>
+      <div class="star" style="top: 52%; left: 65%; animation-delay: 4s;"></div>
+      <div class="star" style="top: 58%; left: 15%; animation-delay: 4.5s;"></div>
+      <div class="star" style="top: 65%; left: 45%; animation-delay: 5s;"></div>
+      <div class="star" style="top: 72%; left: 85%; animation-delay: 5.5s;"></div>
+      <div class="star" style="top: 78%; left: 35%; animation-delay: 6s;"></div>
+      <div class="star" style="top: 85%; left: 55%; animation-delay: 6.5s;"></div>
+      <div class="star" style="top: 92%; left: 25%; animation-delay: 7s;"></div>
+      <div class="star" style="top: 98%; left: 75%; animation-delay: 7.5s;"></div>
+      <div class="star" style="top: 24%; left: -2%; animation-delay: 8s;"></div>
+      <div class="star" style="top: 20%; left: 50%; animation-delay: 8.5s;"></div>
+      <div class="star" style="top: 30%; left: 90%; animation-delay: 9s;"></div>
+      <div class="star" style="top: 40%; left: 10%; animation-delay: 9.5s;"></div>
+      <div class="star" style="top: 50%; left: 70%; animation-delay: 10s;"></div>
+
+      <!-- étoile slide -->
+      <div class="star-follow"></div>
+
+      <section class="flex justify-center gap-8 mb-4 lg:h-screen lg:mt-40">
         <div>
           <h1 class="mb-6 text-2xl font-Aquire font-bold text-aqua">Salut !</h1>
           <p class="mr-2 text-sm font-Merriweather text-white lg:text-base">
@@ -25,21 +51,26 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
             <a
               class="p-2 border-2 border-grayish-blue rounded-md font-Aquire text-white"
               href="/CV.pdf"
-              download="CV.pdf">Télécharger CV</a>
+              download="CV.pdf">Télécharger CV</a
+            >
           </div>
         </div>
         <div class="hidden lg:block">
-          <img class="shadow-bottom-left w-96 float-animation" src="/moi.webp" alt="moi" />
+          <img
+            class="shadow-bottom-left w-96 float-animation"
+            src="/moi.webp"
+            alt="moi"
+          />
         </div>
       </section>
-      
+
       <section
         class="flex flex-col justify-center p-4 rounded-md border-grayish-blue border-4 lg:p-6"
       >
         <h2 class="text-aqua text-2xl font-Aquire">Mes Compétences</h2>
 
         <section class="flex flex-col justify-center items-center">
-          <p class=" mb-10 font-Merriweather text-white text-sm lg:text-base">
+          <p class="mb-10 font-Merriweather text-white text-sm lg:text-base">
             Au cours de ma formation, j’ai acquis des compétences en graphisme,
             développement web, ainsi qu’en montage vidéo et audio. J’ai eu
             l’opportunité de les affiner et de les mettre en pratique à travers
@@ -51,15 +82,41 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
               <ul
                 class="flex justify-start items-center gap-2 mb-4 h-auto lg:w-64"
               >
-              <li>
-                <img class="w-10 lg:w-16" src="/logo-figma.webp" alt="logo figma" />
-              </li>
                 <li>
-                  <img class="w-10 lg:w-16" src="/logo-illustrator.webp" alt="logo illustrator" />
+                  <img
+                    class="w-10 lg:w-16"
+                    src="/logo-figma.webp"
+                    alt="logo figma"
+                  />
                 </li>
-                <li><img class="w-10 lg:w-16" src="/logo-photoshop.webp" alt="logo photoshop" /></li>
-                <li><img class="w-10 lg:w-16" src="/logo-after.webp" alt="logo after effect" /></li>
-                <li><img class="w-10 lg:w-16" src="/logo-indesign.webp" alt="logo indesign" /></li>
+                <li>
+                  <img
+                    class="w-10 lg:w-16"
+                    src="/logo-illustrator.webp"
+                    alt="logo illustrator"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="w-10 lg:w-16"
+                    src="/logo-photoshop.webp"
+                    alt="logo photoshop"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="w-10 lg:w-16"
+                    src="/logo-after.webp"
+                    alt="logo after effect"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="w-10 lg:w-16"
+                    src="/logo-indesign.webp"
+                    alt="logo indesign"
+                  />
+                </li>
               </ul>
               <p class="font-Merriweather text-white text-sm lg:text-base">
                 Je maîtrise les logiciels Adobe (Photoshop, Illustrator,
@@ -114,8 +171,20 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
               <ul
                 class="flex justify-start items-center gap-2 mb-4 h-auto lg:w-64"
               >
-                <li><img class="w-10 lg:w-12" src="/logo-premiere.webp" alt="logo HTML" /></li>
-                <li><img class="w-10 lg:w-12" src="/logo-filmora.webp" alt="logo CSS" /></li>
+                <li>
+                  <img
+                    class="w-10 lg:w-12"
+                    src="/logo-premiere.webp"
+                    alt="logo HTML"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="w-10 lg:w-12"
+                    src="/logo-filmora.webp"
+                    alt="logo CSS"
+                  />
+                </li>
               </ul>
               <p class="font-Merriweather text-white text-sm lg:text-base">
                 J'ai une bonne maîtrise des logiciels de montage vidéo,
@@ -139,24 +208,86 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
     </main>
     <Footer />
   </body>
+  
+  ...
+<style>
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-30px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
 
-  <style>
+  .float-animation {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  @media (max-width: 768px) {
     @keyframes float {
       0% {
         transform: translateY(0);
       }
       50% {
-        transform: translateY(-30px);
+        transform: translateY(-10px); /* Lighter float for mobile */
       }
       100% {
         transform: translateY(0);
       }
     }
-  
-    .float-animation {
-      animation: float 3s ease-in-out infinite;
-    }
-  </style>
-  
+  }
 
-</html>
+  .star {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 10px white;
+    animation: twinkle 2s infinite ease-in-out;
+  }
+
+  @keyframes twinkle {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+
+  .star-follow {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background: yellow;
+    border-radius: 50%;
+    box-shadow: 0 0 20px yellow;
+    top: 100px;
+    left: 10px;
+    animation: twinkle 2s infinite ease-in-out;
+    transition: top 0.3s linear; 
+  }
+</style>
+
+
+<script>
+  document.addEventListener('scroll', function() {
+    const starFollow = document.querySelector('.star-follow') as HTMLElement;
+    const scrollPosition = window.scrollY;
+    const documentHeight = document.documentElement.scrollHeight;
+    const windowHeight = window.innerHeight;
+
+    if (starFollow) {
+      if (scrollPosition + windowHeight >= documentHeight) {
+        starFollow.style.top = `${windowHeight - 20}px`;
+      } else {
+        starFollow.style.top = `${100 + scrollPosition * 0.1}px`;
+      }
+    }
+  });
+</script>
